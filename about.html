@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: gilroy;
+  margin: 0;
+  
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: green;
+  
+  
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+  
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us</a></h1>
+  <p>We are making a community who is used to develop api projects</p>
+  <p>By using this tool you can search any food just type the name of the food and you can easily show the food</p>
+</div>
+
+<h1 style="text-align:center">Our Team</h1>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="man2.jpg" alt="Muzeeb" style="width:100%">
+        <h2>Muzeeburahaman</h2>
+        <p class="title">CEO & Founder</p>
+        <p>AKGECians</p>
+        <p>rahamanmuzeeb1108@gmail.com</p>
+        <a href="contact.html" alt="no image"><p><button class="button" style="border-radius:30px;" >Contact</button></p></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="man2.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Abdul</h2>
+        <p class="title">Art Director</p>
+        <p>AKGECians</p>
+        <p>adul@gmail.com</p>
+        <a href="contact.html" alt="no image"><p><button class="button" style="border-radius:30px;">Contact</button></p></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="man2.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p>iitians</p>
+        <p>john@example.com</p>
+       <a href="contact.html" alt="no image"> <p><button class="button" style="border-radius:30px;">Contact</button></p></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
